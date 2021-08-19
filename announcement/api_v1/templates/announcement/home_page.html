@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../../static/images/hands-greeting-handshake-wallpaper-preview.jpg" class="d-block w-100" alt="Сделка">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Быстрая сделка</h5>
+        <p>В нашем веб-сайте по бесплатным обьявлением, вы сможете быстро найти покупателя, или же найти то что вам надо!</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../../static/images/fit_930_519_false_crop_1280_720_0_66_q90_361922_15e0cd5a94.jpeg" class="d-block w-100" alt="Подарки">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Получай призы!</h5>
+        <p>Успешно заверши 5 сделок на нашем сайте, и выйгрывай дорогие призы!</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../../static/images/9e91958727d5d70af5df54ea58b50285.jpg" class="d-block w-100" alt="Крипта">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Принимаем все криптовалюты!</h5>
+        <p>На этой платформе вы сможете оплачивать онлайн всеми доступными криптовалютами!</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+{% endblock %}
