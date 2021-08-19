@@ -73,7 +73,10 @@ TEMPLATES = [
     },
 ]
 
+
 WSGI_APPLICATION = 'announcement.wsgi.application'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads/')
+MEDIA_URL = '/uploads/'
 
 
 # Database
@@ -90,6 +93,9 @@ DATABASES = {
     }
 }
 
+
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'accounts:login'
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
